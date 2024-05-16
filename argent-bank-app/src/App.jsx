@@ -6,7 +6,6 @@ import Home from "./pages/Home.jsx";
 import Login from "./pages/LogIn.jsx";
 import Profile from "./pages/Profile.jsx";
 import Footer from "./components/Footer.jsx";
-import EditProfile from "./pages/EditProfile.jsx";
 
 export default function App() {
   const userProfil = useSelector((state) => state.login.userProfil);
@@ -39,14 +38,6 @@ export default function App() {
           element={
             <SecurityPath>
               <Profile />
-            </SecurityPath>
-          }
-        />
-        <Route
-          path="/editprofile"
-          element={
-            <SecurityPath>
-              <EditProfile />
             </SecurityPath>
           }
         />
